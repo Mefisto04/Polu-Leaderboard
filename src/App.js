@@ -34,8 +34,11 @@ const Leaderboard = () => {
 
   return (
     <div
-      className="bg-cover bg-center h-screen w-full p-4 flex justify-center items-center"
-      style={{ backgroundImage: `url(${bg})` }}
+      className="bg-cover bg-center min-h-screen w-full p-4 py-12 flex justify-center items-center bg-repeat"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundRepeat: "repeat", // Add this line for background repeat
+      }}
     >
       <div className="bg-primary rounded-lg shadow-2xl p-8">
         <h1 className="text-4xl font-semibold mb-4 text-white text-center">
@@ -71,5 +74,7 @@ const Leaderboard = () => {
 };
 
 export default Leaderboard;
+
+
 
 
